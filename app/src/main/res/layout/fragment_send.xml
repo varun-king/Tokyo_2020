@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="For contct us"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp"
+        android:text="You can reach out us by phone or message. Please provide your phone number"/>
+
+
+
+    <Button
+        android:id="@+id/call_button_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call Us"
+        android:onClick="callPhoneButtonPressed"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:text="You can messege us"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:inputType="textImeMultiLine"
+        android:gravity="start|top"
+        android:layout_height="100dp"
+        android:lines="5"
+        android:hint="Enter message"
+        />
+
+
+    <Button
+        android:id="@+id/sms_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send SMS"
+        android:onClick="sendSMSButtonPressed"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Mail Us"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Subject"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etMailSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Message"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etMailMessage"
+        android:layout_width="match_parent"
+        android:inputType="textImeMultiLine"
+        android:gravity="start|top"
+        android:layout_height="100dp"
+        android:lines="5"
+        android:hint="Enter message for mail"
+        />
+
+    <Button
+        android:id="@+id/email_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Mail"
+        />
+
+
+
+
+
+</LinearLayout>
